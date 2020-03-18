@@ -44,10 +44,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809ddab58e10a134d95d6aea6915d883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObjects: []
-  waves: []
-  spawnPoints: []
-  contagemRegressiva: []
+  pooledObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tempo: {fileID: 0}
+  pauses: {fileID: 0}
+  waves:
+  - apenasAtiradores: 0
+    apenasMelees: 1
+    nome: 1
+    inimigo:
+    - {fileID: 0}
+    quantidade: 7
+    ritmo: 3
+  - apenasAtiradores: 1
+    apenasMelees: 0
+    nome: 2
+    inimigo:
+    - {fileID: 2732320208868592834, guid: 79f082162c90e93449c5028047581e6e, type: 3}
+    - {fileID: 0}
+    quantidade: 5
+    ritmo: 2
+  - apenasAtiradores: 0
+    apenasMelees: 0
+    nome: 3
+    inimigo:
+    - {fileID: 2732320208868592834, guid: 79f082162c90e93449c5028047581e6e, type: 3}
+    - {fileID: 0}
+    quantidade: 10
+    ritmo: 3
+  - apenasAtiradores: 0
+    apenasMelees: 0
+    nome: 4
+    inimigo:
+    - {fileID: 2732320208868592834, guid: 79f082162c90e93449c5028047581e6e, type: 3}
+    - {fileID: 0}
+    quantidade: 15
+    ritmo: 1.5
+  - apenasAtiradores: 0
+    apenasMelees: 1
+    nome: WaveDeMelles
+    inimigo:
+    - {fileID: 2732320208868592834, guid: 79f082162c90e93449c5028047581e6e, type: 3}
+    - {fileID: 0}
+    quantidade: 25
+    ritmo: 0.9
+  - apenasAtiradores: 1
+    apenasMelees: 0
+    nome: Inferno
+    inimigo:
+    - {fileID: 2732320208868592834, guid: 79f082162c90e93449c5028047581e6e, type: 3}
+    - {fileID: 0}
+    quantidade: 25
+    ritmo: 0.9
+  - apenasAtiradores: 0
+    apenasMelees: 0
+    nome: Inferno
+    inimigo:
+    - {fileID: 2732320208868592834, guid: 79f082162c90e93449c5028047581e6e, type: 3}
+    - {fileID: 0}
+    quantidade: 50
+    ritmo: 2
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  contagemRegressiva:
+  - {fileID: 0}
+  - {fileID: 0}
   contadorDaWave: 0
   tempoEntreWaves: 5
 --- !u!114 &4855890905470458426
@@ -64,6 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveCounter: {fileID: 0}
   waveClear: {fileID: 0}
-  numeroDaWave: 0
+  numeroDaWave: 1
   numeroDeWaves: 0
   contagem: 3

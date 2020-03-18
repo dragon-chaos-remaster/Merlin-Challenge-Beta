@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 300485543}
   - component: {fileID: 300485544}
   - component: {fileID: 66766774311073940}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: InimigoPedra
   m_TagString: inimigoPedra
   m_Icon: {fileID: 0}
@@ -136,10 +136,11 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 3
-  areaDeDetecao: 23
+  areaDeDetecao: 17
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
+  enemySpotted: 1
 --- !u!114 &300485543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +177,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0
-  m_Height: 3.88
+  m_Radius: 0.6
+  m_Height: 3
   m_Direction: 1
-  m_Center: {x: 0.5, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}

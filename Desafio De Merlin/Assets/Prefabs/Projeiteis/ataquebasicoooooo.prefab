@@ -5298,6 +5298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foguinho: {fileID: 0}
   velocidadeProjetil: 3000
+  inimigoPedra: {fileID: 8428308942133545685, guid: 3e07bdec95a61184b9c3ba8098e375d6,
+    type: 3}
   tempoDestruicao: 6
   hitBasico: {fileID: 1188432315835894, guid: df6efc22f478d494c9671a59d50002bb, type: 3}
   ondeNasce: {fileID: 4730159595522024}

@@ -7,7 +7,7 @@ public class AtaqueBasico : MonoBehaviour
     Rigidbody fisica;
     public Transform foguinho;
     public float velocidadeProjetil;
-
+    //[SerializeField] RockEnemy inimigoPedra;
     float tempoViva = 0;
     float tempoAtual = 1;
     public float tempoDestruicao;
@@ -19,7 +19,7 @@ public class AtaqueBasico : MonoBehaviour
     {
         fisica = GetComponent<Rigidbody>();
         foguinho = GetComponent<Transform>();
-
+        
         //fisica.AddForce(foguinho.forward * velocidadeProjetil);
     }
 
@@ -43,6 +43,11 @@ public class AtaqueBasico : MonoBehaviour
                 Destroy(gameObject);
                 break;
             case "inimigoTerra":
+                Instantiate(hitBasico, ondeNasce.position, ondeNasce.rotation);
+                Destroy(gameObject);
+                break;
+            case "inimigoPedra":
+                //inimigoPedra.enemySpotted = true;
                 Instantiate(hitBasico, ondeNasce.position, ondeNasce.rotation);
                 Destroy(gameObject);
                 break;

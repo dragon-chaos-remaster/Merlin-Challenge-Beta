@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2431370221681394226}
   - component: {fileID: 7756560744466183929}
   - component: {fileID: 7125875924290184666}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2732320207216590411}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 2732320208868592835}
   - component: {fileID: -3999694029711715817}
   - component: {fileID: 1285324599509066950}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Caveira
   m_TagString: inimigoTerra
   m_Icon: {fileID: 0}
@@ -226,6 +226,8 @@ MonoBehaviour:
   dNaoSei: 10
   dAtaqueBasico: 5
   dFogoArea: 5
+  dano: {fileID: 0}
+  pause: {fileID: 0}
   duracaoSnare: 2
 --- !u!195 &2732320208868592835
 NavMeshAgent:
@@ -284,7 +286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006974731347566904}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +326,7 @@ GameObject:
   - component: {fileID: 709645240275817657}
   - component: {fileID: 8864938485759677077}
   - component: {fileID: 5719061873300235461}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: BarraDeVidaUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +437,7 @@ GameObject:
   - component: {fileID: 3129859373012371248}
   - component: {fileID: 6017392928713733225}
   - component: {fileID: 7324584787634848077}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +510,7 @@ GameObject:
   - component: {fileID: 7578998817100416334}
   - component: {fileID: 4748046662307725922}
   - component: {fileID: 3912468344663392448}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: BarraDeVIda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6322022379928983688}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +679,7 @@ GameObject:
   - component: {fileID: 6123755216079809987}
   - component: {fileID: 2695391881558338596}
   - component: {fileID: 2676905654927440144}
-  m_Layer: 5
+  m_Layer: 15
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

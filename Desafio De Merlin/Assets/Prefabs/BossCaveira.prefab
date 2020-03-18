@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7375722506837009759}
   - component: {fileID: 7375722506837009758}
   - component: {fileID: 7375722506837009745}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: BossCaveira
   m_TagString: BossCaveira
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7375722507286077425}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Atira2
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7375722507534690346}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Atira1
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}

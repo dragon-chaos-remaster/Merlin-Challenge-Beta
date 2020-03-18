@@ -26,6 +26,7 @@ TagManager:
   - ilha3
   - BossCaveira
   - inimigoPedra
+  - PoolingArrow
   layers:
   - Default
   - TransparentFX
@@ -42,7 +43,7 @@ TagManager:
   - BossCaveira
   - Flecha
   - Player
-  - 
+  - Enemies
   - 
   - 
   - 

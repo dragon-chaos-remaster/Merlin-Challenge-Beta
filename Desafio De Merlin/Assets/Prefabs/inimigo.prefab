@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5967743}
   - component: {fileID: 5967742}
   - component: {fileID: 5967745}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 1098119009761256555}
   - component: {fileID: 6284305620192632485}
   - component: {fileID: 5433976188380940582}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: inimigo
   m_TagString: inimigoFraco
   m_Icon: {fileID: 0}

@@ -21,7 +21,7 @@ public class CaveiraMinion : MonoBehaviour
     void Start()
     {
         target = GameObject.FindWithTag("player").transform;
-        pooling = GameObject.Find("PoolingArrow").GetComponent<Pooling>();
+        pooling = GameObject.FindWithTag("PoolingArrow").GetComponent<Pooling>();
     }
 
     // Update is called once per frame
@@ -41,6 +41,7 @@ public class CaveiraMinion : MonoBehaviour
             GameObject aux = pooling.GetPooledObject();
             if(aux != null)
             {
+                aux.SetActive(true);
                 print("Oi");
                 aux.transform.position = ondeNasco.position;
                 aux.transform.rotation = ondeNasco.rotation;

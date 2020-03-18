@@ -7,6 +7,7 @@ public class Raio : MonoBehaviour
     public GameObject hitRaio;
     public Transform ondeNasce;
 
+    [SerializeField] LayerMask layerDeInimigos;
 
     Rigidbody fisica;
 
@@ -55,7 +56,7 @@ public class Raio : MonoBehaviour
             }
 
         }
-        if (other.gameObject.CompareTag("inimigoTerra") || other.gameObject.CompareTag("inimigoFraco"))
+        if (other.gameObject.CompareTag("inimigoTerra") || other.gameObject.CompareTag("inimigoFraco") || other.gameObject.CompareTag("inimigoPedra"))
         {
             print(ricochetes);
             ricochetes++;

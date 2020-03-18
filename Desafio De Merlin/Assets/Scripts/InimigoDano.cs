@@ -31,11 +31,11 @@ public class InimigoDano : MonoBehaviour
 
     private void OnDisable()
     {
-        dano.vida = 30;
+        dano.vida = 50;
     }
     private void OnTriggerEnter(Collider other)
     {
-        switch (other.tag)
+        switch (other.gameObject.tag)
         {
             case "bolaFogo":
                 dano.gameObject.GetComponent<TomaDano>().TomarDanos(dFogo);

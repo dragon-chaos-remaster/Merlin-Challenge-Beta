@@ -25,6 +25,14 @@ public class ControleJogador : MonoBehaviour
         movimento = new Vector3((Input.GetAxisRaw("Vertical")), 0f, -(Input.GetAxisRaw("Horizontal")));
         movimento = movimento.normalized * speed;
         fisica.velocity = movimento;
+
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+        {
+            Vector3 playerToMouse = hit.point - transform.position;
+            playerToMouse.y = 0;
+            Quaternion newRot = Quaternion.LookRotation(playerToMouse);
+            fisica.MoveRotation(newRot);
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -38,22 +46,22 @@ public class ControleJogador : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void FixedUpdate()
-    {
+    //void FixedUpdate()
+    //{
 
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
-        {
-            Vector3 playerToMouse = hit.point - transform.position;
-            playerToMouse.y = 0;
-            Quaternion newRot = Quaternion.LookRotation(playerToMouse);
-            fisica.MoveRotation(newRot);
-        }
-        //Apenas inverti os valores do movimento baseado no Angulo da Camera, se preferir que a camera fique do jeito Original, basta retirar as 2 barrinhas "//" da linha abaixo e apagar a linha invertida
+    //    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+    //    {
+    //        Vector3 playerToMouse = hit.point - transform.position;
+    //        playerToMouse.y = 0;
+    //        Quaternion newRot = Quaternion.LookRotation(playerToMouse);
+    //        fisica.MoveRotation(newRot);
+    //    }
+    //    //Apenas inverti os valores do movimento baseado no Angulo da Camera, se preferir que a camera fique do jeito Original, basta retirar as 2 barrinhas "//" da linha abaixo e apagar a linha invertida
 
-        //movimento = new Vector3((Input.GetAxisRaw("Horizontal")), 0f , (Input.GetAxisRaw("Vertical")));
-        //movimento = new Vector3((Input.GetAxisRaw("Vertical")), 0f, -(Input.GetAxisRaw("Horizontal")));
-        //movimento = movimento.normalized * speed * Time.fixedDeltaTime;
-        //fisica.MovePosition(transform.position + movimento);
+    //    movimento = new Vector3((Input.GetAxisRaw("Horizontal")), 0f, (Input.GetAxisRaw("Vertical")));
+    //    movimento = new Vector3((Input.GetAxisRaw("Vertical")), 0f, -(Input.GetAxisRaw("Horizontal")));
+    //    movimento = movimento.normalized * speed * Time.fixedDeltaTime;
+    //    fisica.MovePosition(transform.position + movimento);
 
-    }
+    //}
 }

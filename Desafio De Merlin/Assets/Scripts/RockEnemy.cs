@@ -20,13 +20,13 @@ public class RockEnemy : MonoBehaviour
     Collider[] enemyDetectionSpots;
     [SerializeField] LayerMask layerDoPlayer;
 
-    bool enemySpotted;
+    [SerializeField] bool enemySpotted = false;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.speed = velocidade/Mathf.Clamp(transform.localScale.magnitude,1f,10f);
+        agent.speed = velocidade/Mathf.Clamp(transform.localScale.magnitude,1f,20f);
         agent.acceleration = aceleration;
         agent.stoppingDistance = distanciaDeNojo;
         print(transform.localScale.sqrMagnitude);
@@ -46,7 +46,7 @@ public class RockEnemy : MonoBehaviour
         
         if(enemyDetectionSpots.Length != 0)
         {
-            print("ENEMY SPOTTED");
+            //print("ENEMY SPOTTED");
             enemySpotted = true;
         }
         if (enemySpotted)
@@ -59,23 +59,25 @@ public class RockEnemy : MonoBehaviour
         switch (other.tag)
         {
             case "bolaFogo":
+                enemySpotted = true;
                 dano.gameObject.GetComponent<TomaDano>().TomarDanos(15);
                 break;
             case "Raio":
-
+                enemySpotted = true;
                 dano.gameObject.GetComponent<TomaDano>().TomarDanos(12);
                 break;
             case "NaoSei":
+                enemySpotted = true;
                 snare.gameObject.GetComponent<Snared>().Snare();
                 dano.gameObject.GetComponent<TomaDano>().TomarDanos(7);
 
                 break;
             case "ataqueBasico":
-
+                enemySpotted = true;
                 dano.gameObject.GetComponent<TomaDano>().TomarDanos(10);
                 break;
             case "pegaFogo":
-
+                enemySpotted = true;
                 dano.gameObject.GetComponent<TomaDano>().TomarDanos(3);
                 break;
 
