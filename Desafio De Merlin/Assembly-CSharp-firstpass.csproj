@@ -106,6 +106,9 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/2019.3.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>

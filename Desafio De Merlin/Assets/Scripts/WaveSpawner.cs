@@ -24,9 +24,11 @@ public class WaveSpawner : MonoBehaviour
     [System.Serializable]
     public class Wave
     {
-        public bool apenasAtiradores;
-        public bool apenasMelees;
+        //public bool apenasAtiradores;
+        //public bool apenasMelees;
+        //public bool apenasPedras;
         //public bool[] estaNaIlha;
+        public bool[] apenas = new bool[3];
         public string nome;
         public Transform[] inimigo;
         public int quantidade;
@@ -130,7 +132,7 @@ public class WaveSpawner : MonoBehaviour
         if (procurarContador <= 0f)
         {
             procurarContador = 1f;
-            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null)
+            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null && GameObject.FindGameObjectWithTag("inimigoPedra") == null)
             {
                 //FREEZE FRAME NO ULTIMO INIMIGO
                 tempo.FreezeFrame();
@@ -174,14 +176,19 @@ public class WaveSpawner : MonoBehaviour
     }
     void SpawnEnemy()
     {
-        if (waves[proximaWave].apenasAtiradores)
+        if (waves[proximaWave].apenas[0])
         {
             GameObject aux = pooledObjects[0].GetPooledObject();
             SetEnemyToSpawn(aux);
         }
-        else if (waves[proximaWave].apenasMelees)
+        else if (waves[proximaWave].apenas[1])
         {
             GameObject aux = pooledObjects[1].GetPooledObject();
+            SetEnemyToSpawn(aux);
+        }
+        else if (waves[proximaWave].apenas[2])
+        {
+            GameObject aux = pooledObjects[2].GetPooledObject();
             SetEnemyToSpawn(aux);
         }
         else
@@ -189,8 +196,8 @@ public class WaveSpawner : MonoBehaviour
             GameObject aux = pooledObjects[Random.Range(0, pooledObjects.Length)].GetPooledObject();
             SetEnemyToSpawn(aux);
         }
-        
-        
+
+
     }
     
     public void SetEnemyToSpawn(GameObject enemy)

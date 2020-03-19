@@ -28,7 +28,7 @@ public class ControleJogador : MonoBehaviour
 
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
         {
-            Vector3 playerToMouse = hit.point - transform.position;
+            Vector3 playerToMouse = (hit.point - transform.position).normalized;
             playerToMouse.y = 0;
             Quaternion newRot = Quaternion.LookRotation(playerToMouse);
             fisica.MoveRotation(newRot);

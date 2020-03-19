@@ -27,7 +27,8 @@ public class Caveira : MonoBehaviour
     [SerializeField] TomaDano dano;
 
     [SerializeField] Pause pause;
-    
+
+    [SerializeField] Pooling pooling;
 
     Snared snare;
     public float duracaoSnare;
@@ -82,7 +83,14 @@ public class Caveira : MonoBehaviour
     }
     void Shoot()
     {
-        Instantiate(flecha, shootPoint.position, shootPoint.rotation);
+        //Instantiate(flecha, shootPoint.position, shootPoint.rotation);
+        GameObject aux = pooling.GetPooledObject();
+        if (aux != null)
+        {
+            aux.SetActive(true);
+            aux.transform.position = shootPoint.position;
+            aux.transform.rotation = shootPoint.rotation;
+        }
     }
     
     void OnDisable()

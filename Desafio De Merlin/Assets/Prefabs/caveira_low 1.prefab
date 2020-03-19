@@ -212,6 +212,7 @@ MonoBehaviour:
   dFogoArea: 5
   dano: {fileID: 6117188299263344147}
   pause: {fileID: 0}
+  pooling: {fileID: 0}
   duracaoSnare: 2
 --- !u!114 &6117188299263344147
 MonoBehaviour:
@@ -630,12 +631,12 @@ PrefabInstance:
     - target: {fileID: 7108565468507217606, guid: 742403ea7821aaa41a8a895270212edc,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7108565468507217606, guid: 742403ea7821aaa41a8a895270212edc,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7182177212411333735, guid: 742403ea7821aaa41a8a895270212edc,
         type: 3}

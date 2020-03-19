@@ -8,7 +8,13 @@ public class Pause : MonoBehaviour
     public bool pausado;
 
     public GameObject pauseBox;
+    [SerializeField] AudioClip click;
 
+    public void ButtonScalePump(GameObject botao)
+    {
+        iTween.PunchScale(botao.gameObject,iTween.Hash("x",7.5f,"y",0.5f,"amount",transform.position,"time",1f));
+        iTween.Stab(botao.gameObject,click,0.5f);
+    }
     // Update is called once per frame
     void Update()
     {
