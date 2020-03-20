@@ -17,9 +17,9 @@ public class MenuToGame : MonoBehaviour
 
     IEnumerator Transicao(int buildNumber)
     {
-        float many = manyParticles.emission.rateOverTime.constant;
-        many *= 10;
-        print("Ema");
+        var em = manyParticles.emission;
+        em.rateOverTime = 150;
+        //print("Ema");
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(buildNumber);
         

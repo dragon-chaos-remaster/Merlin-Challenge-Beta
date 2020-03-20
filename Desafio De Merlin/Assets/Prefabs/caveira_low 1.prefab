@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4487429133826149405
 Transform:
   m_ObjectHideFlags: 0
@@ -211,7 +211,6 @@ MonoBehaviour:
   dAtaqueBasico: 5
   dFogoArea: 5
   dano: {fileID: 6117188299263344147}
-  pause: {fileID: 0}
   pooling: {fileID: 0}
   duracaoSnare: 2
 --- !u!114 &6117188299263344147

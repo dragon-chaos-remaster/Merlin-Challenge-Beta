@@ -37,7 +37,8 @@ public class BossCaveira : MonoBehaviour
     bool roleta = true;
     bool caveira = false;
 
-    
+    [SerializeField] float distanceValue;
+
     public float tempoDuracaoRoleta = 5;
     public float tempoAtualRoleta;
     public float tempoRoleta = 1;
@@ -47,18 +48,31 @@ public class BossCaveira : MonoBehaviour
 
     private void Start()
     {
+        distanceValue = Mathf.Clamp(distanceValue, 8.39f, 20f);
         dano = GetComponent<TomaDano>();
         //snare = GetComponent<Snared>();
     }
     // Update is called once per frame
     void Update()
     {
+        
         if (roleta)
         {
+            distanceValue += Time.deltaTime;
+            transform.position = (Vector3.up * distanceValue);
+            //print(distanceValue);
             RoletaRussa();
         }
         if (caveira)
         {
+            distanceValue -= Time.deltaTime;
+            transform.position = (Vector3.up * distanceValue);
+            if(transform.position.y <= 8.41f)
+            {
+                distanceValue = 8.42f;
+            }
+            
+            //distanceValue = Time.deltaTime - transform.position.y;
             CaveiraFantasma();
         }
         //snare.Desnare(2f);

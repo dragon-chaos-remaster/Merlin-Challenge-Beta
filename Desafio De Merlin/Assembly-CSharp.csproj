@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Deactivate.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -89,6 +88,7 @@
     <Compile Include="Assets\Scripts\Coletavel.cs" />
     <Compile Include="Assets\Scripts\ControleJogador.cs" />
     <Compile Include="Assets\Scripts\CoolDown.cs" />
+    <Compile Include="Assets\Scripts\Deactivate.cs" />
     <Compile Include="Assets\Scripts\DropItem.cs" />
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\FaceCamera.cs" />

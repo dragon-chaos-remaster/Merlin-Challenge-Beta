@@ -12,7 +12,7 @@ public class CaveiraMinion : MonoBehaviour
     public float tempoDeEspera = 5;
     public float tempoAtual;
     public float tempo = 1;
-
+    
 
     [SerializeField] Pooling pooling;
 
@@ -27,15 +27,15 @@ public class CaveiraMinion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target.gameObject == null)
+        if(target.gameObject == null && Pause.pausado)
         {
             return;
         }
-        if (BossCaveira.contagemCaveira >= 4 | tempoAtual >= 3)
+        if (BossCaveira.contagemCaveira >= 4 | tempoAtual >= 3 || GameObject.FindWithTag("BossCaveira").gameObject == null)
         {
             Destroy(gameObject);
         }
-
+        
         OlhandoProPlayer();
         transform.LookAt(target);
         tempoAtual += tempo * Time.deltaTime;
@@ -45,7 +45,7 @@ public class CaveiraMinion : MonoBehaviour
             if(aux != null)
             {
                 aux.SetActive(true);
-                print("Oi");
+                //print("Oi");
                 aux.transform.position = ondeNasco.position;
                 aux.transform.rotation = ondeNasco.rotation;
             }
