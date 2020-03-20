@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Pause : MonoBehaviour
 {
-    public bool pausado;
-
+    public static bool pausado;
+    [SerializeField] GameObject particle;
     public GameObject pauseBox;
     [SerializeField] AudioClip click;
 
     public void ButtonScalePump(GameObject botao)
     {
-        iTween.PunchScale(botao.gameObject,iTween.Hash("x",7.5f,"y",0.5f,"amount",transform.position,"time",1f));
+        
+        iTween.PunchScale(botao.gameObject,iTween.Hash("z",10f,"y",0.5f,"amount",botao.transform.localScale,"time",1f,"ignoretimescale",true));
+        particle.transform.position = botao.transform.position;
+        particle.transform.rotation = botao.transform.rotation;
+        particle.SetActive(true);
         iTween.Stab(botao.gameObject,click,0.5f);
     }
     // Update is called once per frame

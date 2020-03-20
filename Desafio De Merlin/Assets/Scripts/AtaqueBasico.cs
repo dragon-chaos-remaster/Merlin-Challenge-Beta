@@ -51,6 +51,10 @@ public class AtaqueBasico : MonoBehaviour
                 Instantiate(hitBasico, ondeNasce.position, ondeNasce.rotation);
                 Destroy(gameObject);
                 break;
+            case "BossCaveira":
+                Instantiate(hitBasico, ondeNasce.position, ondeNasce.rotation);
+                Destroy(gameObject);
+                break;
         }
 
     }

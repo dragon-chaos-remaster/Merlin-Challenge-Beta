@@ -94,6 +94,9 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
@@ -105,9 +108,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/2019.3.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -285,6 +285,9 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:/Program Files/2019.3.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/BetaGit/Merlin-Challenge-Beta/Desafio De Merlin/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Program Files/2019.3.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

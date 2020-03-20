@@ -26,7 +26,7 @@ public class Caveira : MonoBehaviour
 
     [SerializeField] TomaDano dano;
 
-    [SerializeField] Pause pause;
+    //[SerializeField] Pause pause;
 
     [SerializeField] Pooling pooling;
 
@@ -53,7 +53,7 @@ public class Caveira : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null || pause.pausado)
+        if (target == null || Pause.pausado)
         {
             return;
         }

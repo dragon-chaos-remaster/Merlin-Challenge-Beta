@@ -27,7 +27,10 @@ public class CaveiraMinion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(target.gameObject == null)
+        {
+            return;
+        }
         if (BossCaveira.contagemCaveira >= 4 | tempoAtual >= 3)
         {
             Destroy(gameObject);

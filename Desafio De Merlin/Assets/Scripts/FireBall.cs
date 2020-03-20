@@ -15,14 +15,12 @@ public class FireBall : MonoBehaviour
         ondeNasce = GetComponent<Transform>();
     }
 
-   
-
-
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == ("chao"))
+        if (other.tag == ("chao") || other.tag == ("BossCaveira"))
         {
+            FindObjectOfType<AudioManager>().Play("explosão");
             Instantiate(hitDoFogo, ondeNasce.position, ondeNasce.rotation);
             Instantiate(pegaFogo, ondeNasce.position, ondeNasce.rotation);
             Destroy(gameObject);

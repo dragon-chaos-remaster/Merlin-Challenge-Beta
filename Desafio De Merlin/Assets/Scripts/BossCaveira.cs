@@ -42,8 +42,14 @@ public class BossCaveira : MonoBehaviour
     public float tempoAtualRoleta;
     public float tempoRoleta = 1;
 
-   
+    [SerializeField] TomaDano dano;
+    //[SerializeField] Snared snare;
 
+    private void Start()
+    {
+        dano = GetComponent<TomaDano>();
+        //snare = GetComponent<Snared>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -55,8 +61,33 @@ public class BossCaveira : MonoBehaviour
         {
             CaveiraFantasma();
         }
+        //snare.Desnare(2f);
 
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        switch (other.tag)
+        {
+            case "bolaFogo":
+                dano.TomarDanos(10);
+                break;
+            case "Raio":
 
+                dano.TomarDanos(5);
+                break;
+            case "NaoSei":
+                //snare.Snare();
+                dano.TomarDanos(3);
+                break;
+            case "ataqueBasico":
+
+                dano.TomarDanos(5);
+                break;
+            case "pegaFogo":
+
+                dano.TomarDanos(1);
+                break;
+        }
     }
     void RoletaRussa()
     {

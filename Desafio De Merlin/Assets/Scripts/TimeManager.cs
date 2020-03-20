@@ -5,11 +5,11 @@ public class TimeManager : MonoBehaviour
     public float intensidadeDoSlowMotion = 0.05f;
     public float duracaoDoSlowMotion = 2f;
 
-    [SerializeField]Pause pausou;
+    //[SerializeField]Pause pausou;
 
     void Update()
     {
-        if (!pausou.pausado)
+        if (!Pause.pausado)
         {
             Time.timeScale += (1 / duracaoDoSlowMotion) * Time.unscaledDeltaTime;
             Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
