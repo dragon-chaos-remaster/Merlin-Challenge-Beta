@@ -175,6 +175,7 @@ MonoBehaviour:
   tempoDeEspera: 3
   tempoAtual: 0
   tempo: 1
+  nossoMestre: {fileID: 0}
   pooling: {fileID: 0}
 --- !u!1 &2952587632327103623
 GameObject:

@@ -8,7 +8,7 @@ public class WaveSpawner : MonoBehaviour
 {
 
     public Pooling[] pooledObjects;
-
+    [SerializeField] List<GameObject> bosses = new List<GameObject>();
     [SerializeField] TimeManager tempo;
 
     //[SerializeField] Pause pauses;
@@ -89,9 +89,13 @@ public class WaveSpawner : MonoBehaviour
             {
 
                 OnWaveCompleted();
-                WaveCount.Instance.numeroDaWave++;
-                contagemRegressiva[0].gameObject.SetActive(true);
-                contagemRegressiva[1].gameObject.SetActive(true);
+                if (!bosses[0].activeInHierarchy)
+                {
+                    WaveCount.Instance.numeroDaWave++;
+                    WaveCount.Instance.waveClear.gameObject.SetActive(true);
+                    contagemRegressiva[0].gameObject.SetActive(true);
+                    contagemRegressiva[1].gameObject.SetActive(true);
+                }
                 //print("Wave Completa");
                 //zaWarudo = true;
                 return;
@@ -132,7 +136,7 @@ public class WaveSpawner : MonoBehaviour
         if (procurarContador <= 0f)
         {
             procurarContador = 1f;
-            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null && GameObject.FindGameObjectWithTag("inimigoPedra") == null)
+            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null && GameObject.FindGameObjectWithTag("inimigoPedra") == null && !bosses[0].activeInHierarchy)
             {
                 //FREEZE FRAME NO ULTIMO INIMIGO
                 tempo.FreezeFrame();
@@ -148,10 +152,12 @@ public class WaveSpawner : MonoBehaviour
         estado = SpawnState.CONTANDO;
         contadorDaWave = tempoEntreWaves;
         // tempo.FreezeFrame();
-        WaveCount.Instance.waveClear.gameObject.SetActive(true);
+        //WaveCount.Instance.waveClear.gameObject.SetActive(true);
         if (proximaWave + 1 > waves.Length - 1)
         {
-            proximaWave = 0;
+            bosses[0].SetActive(true);
+            StopAllCoroutines();
+            //proximaWave = 0;
         }
         else
         {
@@ -161,6 +167,8 @@ public class WaveSpawner : MonoBehaviour
     }
     IEnumerator CanSpawn(Wave wave)
     {
+        if (!bosses[0].activeInHierarchy)
+        {
         estado = SpawnState.SPAWNANDO;
         waveCountPointer = wave.quantidade;
         //O Spawn
@@ -168,6 +176,7 @@ public class WaveSpawner : MonoBehaviour
         {
             SpawnEnemy();
             yield return new WaitForSeconds(1f / wave.ritmo);
+        }
         }
         //Fim do Spawn
         estado = SpawnState.ESPERANDO;

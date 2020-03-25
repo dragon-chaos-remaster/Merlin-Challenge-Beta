@@ -12,8 +12,8 @@ public class CaveiraMinion : MonoBehaviour
     public float tempoDeEspera = 5;
     public float tempoAtual;
     public float tempo = 1;
-    
 
+    [SerializeField] GameObject nossoMestre;
     [SerializeField] Pooling pooling;
 
 
@@ -22,6 +22,7 @@ public class CaveiraMinion : MonoBehaviour
     {
         target = GameObject.FindWithTag("player").transform;
         pooling = GameObject.FindWithTag("PoolingArrow").GetComponent<Pooling>();
+        nossoMestre = GameObject.Find("chefaocaveira_low").gameObject;
     }
 
     // Update is called once per frame
@@ -31,7 +32,7 @@ public class CaveiraMinion : MonoBehaviour
         {
             return;
         }
-        if (BossCaveira.contagemCaveira >= 4 | tempoAtual >= 3 || GameObject.FindWithTag("BossCaveira").gameObject == null)
+        if (BossCaveira.contagemCaveira >= 4 || tempoAtual >= 3 || (!nossoMestre.activeInHierarchy)) /*!GameObject.FindWithTag("BossCaveira").gameObject.activeInHierarchy)*/
         {
             Destroy(gameObject);
         }

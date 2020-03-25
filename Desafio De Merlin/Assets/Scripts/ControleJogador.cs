@@ -26,7 +26,7 @@ public class ControleJogador : MonoBehaviour
         movimento = movimento.normalized * speed;
         fisica.velocity = movimento;
 
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 1000))
         {
             Vector3 playerToMouse = (hit.point - transform.position).normalized;
             playerToMouse.y = 0;
