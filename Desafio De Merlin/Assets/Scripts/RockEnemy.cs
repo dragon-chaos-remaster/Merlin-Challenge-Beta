@@ -18,19 +18,25 @@ public class RockEnemy : MonoBehaviour
     Snared snare;
 
     Collider[] enemyDetectionSpots;
-    [SerializeField] LayerMask layerDoPlayer;
+    
 
+    [SerializeField] LayerMask layerDoPlayer;
+    Rigidbody myBody;
     [SerializeField] bool enemySpotted = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        myBody = GetComponent<Rigidbody>();
+        myBody.isKinematic = true;
         agent = GetComponent<NavMeshAgent>();
+        agent.enabled = false;
         agent.speed = velocidade/Mathf.Clamp(transform.localScale.magnitude,1f,20f);
         agent.acceleration = aceleration;
         agent.stoppingDistance = distanciaDeNojo;
         print(transform.localScale.sqrMagnitude);
         print("Speed of " + agent.speed + " from " + this.gameObject.name);
+
         dano = GetComponent<TomaDano>();
         snare = GetComponent<Snared>();
 
@@ -41,7 +47,7 @@ public class RockEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        snare.Desnare(3);
+        snare.Desnare(1.5f);
         enemyDetectionSpots = Physics.OverlapSphere(transform.position,areaDeDetecao,layerDoPlayer);
         
         if(enemyDetectionSpots.Length != 0)
@@ -51,9 +57,11 @@ public class RockEnemy : MonoBehaviour
         }
         if (enemySpotted)
         {
+            agent.enabled = true;
             agent.SetDestination(targetPos.position);
         }
     }
+    
     private void OnTriggerEnter(Collider other)
     {
         switch (other.tag)
