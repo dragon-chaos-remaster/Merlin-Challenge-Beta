@@ -226,20 +226,40 @@ PrefabInstance:
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
+    - target: {fileID: -7482397077843007464, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: -7126837492117055633, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: -7126837492117055633, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -6746865536626320567, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
+    - target: {fileID: -6746865536626320567, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: -5582514546476271282, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: -5582514546476271282, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
@@ -299,72 +319,127 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3823943659838541247, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
+    - target: {fileID: -3823943659838541247, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: -2653000426965490624, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: -2653000426965490624, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_Name
       value: chefaopedra_low
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 63261457159909162, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: 63261457159909162, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 567458539005487043, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
+    - target: {fileID: 567458539005487043, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2183283629231450742, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: 2183283629231450742, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4356197886620829377, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
+    - target: {fileID: 4356197886620829377, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5304998861136294316, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304998861136294316, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6399525363809037127, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
+    - target: {fileID: 6399525363809037127, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7566142147207356749, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_TagString
+      value: inimigoPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566142147207356749, guid: 7bd940b36f6b972448e50c06a006167e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189925896451622711, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
       propertyPath: m_TagString
       value: inimigoPedra
       objectReference: {fileID: 0}
     - target: {fileID: 9189925896451622711, guid: 7bd940b36f6b972448e50c06a006167e,
         type: 3}
-      propertyPath: m_TagString
-      value: inimigoPedra
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd940b36f6b972448e50c06a006167e, type: 3}
@@ -474,7 +549,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -495,7 +570,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -516,7 +591,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -537,7 +612,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -558,7 +633,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -579,7 +654,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -600,7 +675,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -621,7 +696,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -642,7 +717,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -663,7 +738,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -684,7 +759,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -705,7 +780,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -726,7 +801,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -747,7 +822,7 @@ MonoBehaviour:
   velocidade: 11
   aceleration: 8
   distanciaDeNojo: 1
-  areaDeDetecao: 17
+  areaDeDetecao: 15
   layerDoPlayer:
     serializedVersion: 2
     m_Bits: 16384
@@ -1087,12 +1162,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011583}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.010202618
-  m_Height: 0.012466977
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: -0.017617108, y: -0.007727252, z: 0.042375058}
 --- !u!114 &60011626
 MonoBehaviour:
@@ -1113,12 +1188,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011584}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0071419817
-  m_Height: 0.010616911
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: -0.00410842, y: -0.0048280605, z: 0.046774246}
 --- !u!114 &60011628
 MonoBehaviour:
@@ -1139,12 +1214,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011585}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0074675214
-  m_Height: 0.010616689
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.0075883353, y: -0.003346932, z: 0.051277302}
 --- !u!114 &60011630
 MonoBehaviour:
@@ -1165,12 +1240,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011576}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0071419817
-  m_Height: 0.010616911
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: -0.015260309, y: -0.004828064, z: 0.015492266}
 --- !u!136 &60011632
 CapsuleCollider:
@@ -1179,12 +1254,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011577}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.015042404
-  m_Height: 0.016472116
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.0018123656, y: -0.0043854965, z: 0.02391997}
 --- !u!136 &60011633
 CapsuleCollider:
@@ -1193,12 +1268,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011578}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0068943207
-  m_Height: 0.011868294
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.021360667, y: -0.005719709, z: 0.027507529}
 --- !u!136 &60011634
 CapsuleCollider:
@@ -1207,12 +1282,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011579}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.010293205
-  m_Height: 0.020586412
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: -0.021776596, y: -0.010209899, z: 0.026375694}
 --- !u!136 &60011635
 CapsuleCollider:
@@ -1221,12 +1296,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011580}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0076872297
-  m_Height: 0.010616603
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: -0.01048248, y: -0.004525096, z: 0.035130907}
 --- !u!136 &60011636
 CapsuleCollider:
@@ -1235,12 +1310,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011581}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.008754575
-  m_Height: 0.013974262
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.004211896, y: -0.0039623175, z: 0.03860265}
 --- !u!136 &60011637
 CapsuleCollider:
@@ -1249,12 +1324,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011582}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.008512191
-  m_Height: 0.010430108
-  m_Direction: 1
+  m_Radius: 0.006
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.01709905, y: -0.0043384666, z: 0.038933087}
 --- !u!136 &60011638
 CapsuleCollider:
@@ -1263,13 +1338,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011572}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.015461246
-  m_Height: 0.016472118
-  m_Direction: 1
-  m_Center: {x: -0.005338943, y: -0.0017997759, z: 0.009390313}
+  m_Radius: 0.007
+  m_Height: 0.03
+  m_Direction: 0
+  m_Center: {x: -0.003, y: 0, z: 0.008}
 --- !u!136 &60011639
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1277,12 +1352,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011573}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.011535004
-  m_Height: 0.015771974
-  m_Direction: 1
+  m_Radius: 0.007
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.015043462, y: -0.004735699, z: 0.011793493}
 --- !u!136 &60011640
 CapsuleCollider:
@@ -1291,12 +1366,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011574}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.010276914
-  m_Height: 0.021751616
-  m_Direction: 1
+  m_Radius: 0.007
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: 0.029489934, y: -0.013278373, z: 0.010582947}
 --- !u!136 &60011641
 CapsuleCollider:
@@ -1305,12 +1380,12 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011575}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1bf0b62189d5e84eb19392dbf482a7c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.01036988
-  m_Height: 0.018613597
-  m_Direction: 1
+  m_Radius: 0.005
+  m_Height: 0.015
+  m_Direction: 0
   m_Center: {x: -0.025169216, y: -0.012016694, z: 0.0098212715}
 --- !u!54 &60011642
 Rigidbody:
@@ -1320,9 +1395,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011572}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1336,14 +1411,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011573}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1352,14 +1427,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011574}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011645
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1368,14 +1443,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011575}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011646
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1384,14 +1459,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011576}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1400,14 +1475,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011577}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1416,14 +1491,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011578}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1432,14 +1507,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011579}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1448,14 +1523,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011580}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011651
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1464,14 +1539,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011581}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1480,14 +1555,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011582}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1496,14 +1571,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011583}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1512,14 +1587,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011584}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!54 &60011655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1528,14 +1603,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011585}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_Drag: 1
+  m_AngularDrag: 0.75
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!195 &60011656
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1543,9 +1618,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011572}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.018474594
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1554,7 +1629,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.0128725665
+  m_Height: 0.01
   m_BaseOffset: 0.0064362832
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1565,9 +1640,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.025918463
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1576,7 +1651,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.006300576
+  m_Height: 0.01
   m_BaseOffset: 0.003150288
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1587,9 +1662,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.03963559
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1598,7 +1673,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.00001
+  m_Height: 0.01
   m_BaseOffset: -0.0024025645
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1609,9 +1684,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.018923797
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1620,7 +1695,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.00001
+  m_Height: 0.01
   m_BaseOffset: -0.0027098954
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1631,9 +1706,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.022634247
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1642,7 +1717,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.0009607831
+  m_Height: 0.01
   m_BaseOffset: 0.00048039155
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1653,9 +1728,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011577}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.032436676
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1664,7 +1739,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.007701123
+  m_Height: 0.01
   m_BaseOffset: 0.0038505616
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1675,9 +1750,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011578}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.03440185
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1686,7 +1761,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.0004288759
+  m_Height: 0.01
   m_BaseOffset: 0.00021443795
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1697,9 +1772,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.0366689
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1708,7 +1783,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.00001
+  m_Height: 0.01
   m_BaseOffset: -0.00015317369
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1719,9 +1794,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011580}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.041848335
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1730,7 +1805,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.001566411
+  m_Height: 0.01
   m_BaseOffset: 0.0007832055
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1741,9 +1816,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.047357224
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1752,7 +1827,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.0060496274
+  m_Height: 0.01
   m_BaseOffset: 0.0030248137
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1763,9 +1838,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.04744528
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1774,7 +1849,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.0017531747
+  m_Height: 0.01
   m_BaseOffset: 0.00087658735
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1785,9 +1860,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.05219031
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1796,7 +1871,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.00001
+  m_Height: 0.01
   m_BaseOffset: -0.0014937632
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1807,9 +1882,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.053916227
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1818,7 +1893,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.0009607896
+  m_Height: 0.01
   m_BaseOffset: 0.0004803948
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1829,9 +1904,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60011585}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
-  m_Radius: 0.05753541
+  m_Radius: 0.05
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1840,7 +1915,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.003922825
+  m_Height: 0.01
   m_BaseOffset: 0.0019614126
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4349,8 +4424,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678162704}
-  m_LocalRotation: {x: -0, y: 0.8527694, z: -0, w: 0.5222878}
-  m_LocalPosition: {x: 33.36, y: -1.5573864, z: -9.46}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 36.2, y: -0.32, z: -8.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4368,9 +4443,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e61194c0cf3caf43b0f6e4bd30e1499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionRadius: 2.2
-  explosionForce: 50
-  delay: 5
+  explosionRadius: 26
+  explosionForce: 650
+  delay: 4
   freezeFrame: {fileID: 1237924366}
   listaDePedras:
   - {fileID: 60011585}
@@ -4387,6 +4462,9 @@ MonoBehaviour:
   - {fileID: 60011574}
   - {fileID: 60011573}
   - {fileID: 60011572}
+  layerDosInimigos:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &681512134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 33cbfaedf05e1de418ed6c3aab88efc0,
@@ -9911,6 +9989,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo
       objectReference: {fileID: 0}
+    - target: {fileID: 1098119009761256552, guid: 4b5401b191b529d4083f0f7134713548,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098119009761256554, guid: 4b5401b191b529d4083f0f7134713548,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1098119009761256560, guid: 4b5401b191b529d4083f0f7134713548,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12469,7 +12557,7 @@ PrefabInstance:
     - target: {fileID: 1383171828224428223, guid: b24c3daafd9b0b344857fdd7edca6fce,
         type: 3}
       propertyPath: sons.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1383171828224428223, guid: b24c3daafd9b0b344857fdd7edca6fce,
         type: 3}
@@ -12515,6 +12603,26 @@ PrefabInstance:
         type: 3}
       propertyPath: sons.Array.data[0].loop
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383171828224428223, guid: b24c3daafd9b0b344857fdd7edca6fce,
+        type: 3}
+      propertyPath: sons.Array.data[2].som
+      value: 
+      objectReference: {fileID: 8300000, guid: a486a0d7fe679ff48a4c949cebaf4bfa, type: 3}
+    - target: {fileID: 1383171828224428223, guid: b24c3daafd9b0b344857fdd7edca6fce,
+        type: 3}
+      propertyPath: sons.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383171828224428223, guid: b24c3daafd9b0b344857fdd7edca6fce,
+        type: 3}
+      propertyPath: sons.Array.data[2].pitch
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383171828224428223, guid: b24c3daafd9b0b344857fdd7edca6fce,
+        type: 3}
+      propertyPath: sons.Array.data[2].nomeDoSom
+      value: rockexplode
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b24c3daafd9b0b344857fdd7edca6fce, type: 3}
@@ -12746,12 +12854,12 @@ PrefabInstance:
     - target: {fileID: 6306229599738984166, guid: 9ef8830db47a89c40937b00e3c487191,
         type: 3}
       propertyPath: duracaoDoSlowMotion
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6306229599738984166, guid: 9ef8830db47a89c40937b00e3c487191,
         type: 3}
       propertyPath: intensidadeDoSlowMotion
-      value: 0.02
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6306229599738984166, guid: 9ef8830db47a89c40937b00e3c487191,
         type: 3}
