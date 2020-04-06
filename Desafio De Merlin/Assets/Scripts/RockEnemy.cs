@@ -23,7 +23,7 @@ public class RockEnemy : MonoBehaviour
     [SerializeField] LayerMask layerDoPlayer;
     Rigidbody myBody;
     [SerializeField] bool enemySpotted = false;
-
+    [SerializeField] bool startNavMesh;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,11 +61,31 @@ public class RockEnemy : MonoBehaviour
         }
         if (enemySpotted)
         {
-            agent.enabled = true;
-            myBody.mass = 1f;
-            agent.SetDestination(targetPos.position);
+            if (!startNavMesh)
+            {
+                Vector3 moveTowardsPlayer = (targetPos.position - new Vector3(transform.position.x,transform.position.y,transform.position.z * 0.1f)).normalized * agent.speed;
+                transform.Rotate(transform.forward * 10);
+                myBody.velocity = moveTowardsPlayer;
+                Invoke("BeginNavMesh", 4.5f);
+            }
+            else
+            {
+                myBody.mass = 1f;
+                agent.SetDestination(targetPos.position);
+            }
+            //StartCoroutine(BeginNavMesh());
+            //enemySpotted = false;
+            //agent.enabled = true;
+            //myBody.mass = 1f;
+            //agent.SetDestination(targetPos.position);
         }
     }
+    void BeginNavMesh()
+    {      
+        agent.enabled = true;
+        startNavMesh = true;    
+    }
+    
     //private void OnCollisionEnter(Collision chaoDetected)
     //{
     //    if (enemySpotted && chaoDetected.gameObject.CompareTag("chao"))
