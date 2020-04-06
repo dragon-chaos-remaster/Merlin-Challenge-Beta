@@ -18,7 +18,7 @@ public class RockEnemy : MonoBehaviour
     Snared snare;
 
     Collider[] enemyDetectionSpots;
-    
+    //[SerializeField] Collision chaoDetected;
 
     [SerializeField] LayerMask layerDoPlayer;
     Rigidbody myBody;
@@ -27,13 +27,17 @@ public class RockEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //chaoDetected = this.gameObject.GetComponent<Collision>();
+
         myBody = GetComponent<Rigidbody>();
         myBody.isKinematic = true;
+
         agent = GetComponent<NavMeshAgent>();
         agent.enabled = false;
         agent.speed = velocidade/Mathf.Clamp(transform.localScale.magnitude,1f,20f);
         agent.acceleration = aceleration;
         agent.stoppingDistance = distanciaDeNojo;
+
         print(transform.localScale.sqrMagnitude);
         print("Speed of " + agent.speed + " from " + this.gameObject.name);
 
@@ -47,7 +51,7 @@ public class RockEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        snare.Desnare(1.5f);
+        //snare.Desnare(1.5f);
         enemyDetectionSpots = Physics.OverlapSphere(transform.position,areaDeDetecao,layerDoPlayer);
         
         if(enemyDetectionSpots.Length != 0)
@@ -58,10 +62,19 @@ public class RockEnemy : MonoBehaviour
         if (enemySpotted)
         {
             agent.enabled = true;
+            myBody.mass = 1f;
             agent.SetDestination(targetPos.position);
         }
     }
-    
+    //private void OnCollisionEnter(Collision chaoDetected)
+    //{
+    //    if (enemySpotted && chaoDetected.gameObject.CompareTag("chao"))
+    //    {
+    //        agent.enabled = true;
+    //        myBody.mass = 1f;
+    //        agent.SetDestination(targetPos.position);
+    //    }
+    //}
     private void OnTriggerEnter(Collider other)
     {
         switch (other.tag)
