@@ -9,6 +9,10 @@ public class RockEnemy : MonoBehaviour
 
     [SerializeField] Transform targetPos;
 
+    [SerializeField] SphereCollider colisorEsfera;
+
+    //[SerializeField] GameObject explosiveArea;
+
     [SerializeField] float velocidade;
     [SerializeField] float aceleration;
     [SerializeField] float distanciaDeNojo;
@@ -24,6 +28,7 @@ public class RockEnemy : MonoBehaviour
     Rigidbody myBody;
     [SerializeField] bool enemySpotted = false;
     [SerializeField] bool startNavMesh;
+    bool canExplode = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +37,19 @@ public class RockEnemy : MonoBehaviour
         myBody = GetComponent<Rigidbody>();
         myBody.isKinematic = true;
 
+        if (GetComponent<SphereCollider>() == null)
+        {
+            GetComponent<CapsuleCollider>().enabled = false;
+        }
+        else
+        {
+            colisorEsfera = GetComponent<SphereCollider>();
+            colisorEsfera.enabled = false;
+        }
+
         agent = GetComponent<NavMeshAgent>();
         agent.enabled = false;
-        agent.speed = velocidade/Mathf.Clamp(transform.localScale.magnitude,1f,20f);
+        agent.speed = velocidade/Mathf.Clamp(transform.localScale.sqrMagnitude,1f,20f);
         agent.acceleration = aceleration;
         agent.stoppingDistance = distanciaDeNojo;
 
@@ -52,32 +67,42 @@ public class RockEnemy : MonoBehaviour
     void Update()
     {
         //snare.Desnare(1.5f);
-        enemyDetectionSpots = Physics.OverlapSphere(transform.position,areaDeDetecao,layerDoPlayer);
-        
-        if(enemyDetectionSpots.Length != 0)
+        if (WaveSpawner.Instance.waveRound == 2 && !WaveSpawner.Instance.bosses[0].activeInHierarchy)
         {
-            //print("ENEMY SPOTTED");
-            enemySpotted = true;
-        }
-        if (enemySpotted)
-        {
-            if (!startNavMesh)
+            canExplode = true;
+            if (canExplode)
             {
-                Vector3 moveTowardsPlayer = (targetPos.position - new Vector3(transform.position.x,transform.position.y,transform.position.z * 0.1f)).normalized * agent.speed;
-                transform.Rotate(transform.forward * 10);
-                myBody.velocity = moveTowardsPlayer;
-                Invoke("BeginNavMesh", 4.5f);
+                enemyDetectionSpots = Physics.OverlapSphere(transform.position, areaDeDetecao, layerDoPlayer);
             }
             else
             {
-                myBody.mass = 1f;
-                agent.SetDestination(targetPos.position);
+                return;
             }
-            //StartCoroutine(BeginNavMesh());
-            //enemySpotted = false;
-            //agent.enabled = true;
-            //myBody.mass = 1f;
-            //agent.SetDestination(targetPos.position);
+            if (enemyDetectionSpots.Length != 0)
+            {
+                //print("ENEMY SPOTTED");
+                enemySpotted = true;
+            }
+            if (enemySpotted)
+            {
+                if (!startNavMesh)
+                {
+                    Vector3 moveTowardsPlayer = (targetPos.position - new Vector3(transform.position.x, transform.position.y, transform.position.z * 0.1f)).normalized * agent.speed;
+                    transform.Rotate(transform.forward * 10);
+                    myBody.velocity = moveTowardsPlayer;
+                    Invoke("BeginNavMesh", 4.5f);
+                }
+                else
+                {
+                    myBody.mass = 1f;
+                    agent.SetDestination(targetPos.position);
+                }
+                //StartCoroutine(BeginNavMesh());
+                //enemySpotted = false;
+                //agent.enabled = true;
+                //myBody.mass = 1f;
+                //agent.SetDestination(targetPos.position);
+            }
         }
     }
     void BeginNavMesh()

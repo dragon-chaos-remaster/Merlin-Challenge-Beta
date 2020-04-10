@@ -56,7 +56,7 @@ public class Raio : MonoBehaviour
             }
 
         }
-        if (other.gameObject.CompareTag("inimigoTerra") || other.gameObject.CompareTag("inimigoFraco") || other.gameObject.CompareTag("inimigoPedra"))
+        if (other.gameObject.CompareTag("inimigoTerra") || other.gameObject.CompareTag("inimigoFraco"))
         {
             print(ricochetes);
             ricochetes++;

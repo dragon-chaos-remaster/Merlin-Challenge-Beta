@@ -27,6 +27,9 @@ TagManager:
   - BossCaveira
   - inimigoPedra
   - PoolingArrow
+  - Resume
+  - Options
+  - Quit
   layers:
   - Default
   - TransparentFX

@@ -8,9 +8,11 @@ public class WaveSpawner : MonoBehaviour
 {
 
     public Pooling[] pooledObjects;
-    [SerializeField] List<GameObject> bosses = new List<GameObject>();
+    [SerializeField] public List<GameObject> bosses = new List<GameObject>();
+    
     [SerializeField] TimeManager tempo;
 
+    public int waveRound = 1;
     //[SerializeField] Pause pauses;
     //Referência ao Golpe do vilão DIO BRANDO, de Jojo's Bizarre Adventures: Stardust Crusaders, onde ele para o Tempo 
     bool zaWarudo = true;
@@ -136,7 +138,7 @@ public class WaveSpawner : MonoBehaviour
         if (procurarContador <= 0f)
         {
             procurarContador = 1f;
-            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null && GameObject.FindGameObjectWithTag("inimigoPedra") == null && !bosses[0].activeInHierarchy)
+            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null && !bosses[0].activeInHierarchy)
             {
                 //FREEZE FRAME NO ULTIMO INIMIGO
                 tempo.FreezeFrame();
@@ -157,7 +159,8 @@ public class WaveSpawner : MonoBehaviour
         {
             bosses[0].SetActive(true);
             StopAllCoroutines();
-            //proximaWave = 0;
+            proximaWave = 0;
+            waveRound++;
         }
         else
         {

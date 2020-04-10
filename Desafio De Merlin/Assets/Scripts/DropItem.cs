@@ -9,22 +9,18 @@ public class DropItem : MonoBehaviour
     public int controleDrop;
     public GameObject item;
     public Transform ondeNasce;
+    
     // Start is called before the first frame update
-    void Start()
+    
+    void OnDisable()
     {
-        item = GetComponent<GameObject>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Dropando();
     }
 
     public void Dropando()
     {
-        numero = Random.Range(0, 100);
+        numero = Random.Range(0 , 100);
+        Debug.LogError(numero);
         if (numero > controleDrop)
         {
             Instantiate(item, ondeNasce.position, ondeNasce.rotation);
