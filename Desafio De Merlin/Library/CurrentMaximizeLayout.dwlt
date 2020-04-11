@@ -23,7 +23,7 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 908, y: 442}
+  m_MinSize: {x: 908, y: 421}
   m_MaxSize: {x: 22003, y: 10021}
   vertical: 0
   controlID: -1
@@ -137,8 +137,8 @@ MonoBehaviour:
     y: 0
     width: 564
     height: 635
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 421}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
   controlID: -1
 --- !u!114 &4
@@ -160,8 +160,8 @@ MonoBehaviour:
     y: 0
     width: 564
     height: 326
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -204,9 +204,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.242143, y: 1.57, z: 0.113093376}
+    m_Target: {x: -9.56, y: 1.9606724, z: 9.5}
     speed: 2
-    m_Value: {x: -4.242143, y: 1.57, z: 0.113093376}
+    m_Value: {x: -9.56, y: 1.9606724, z: 9.5}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -252,13 +252,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.25228697, y: 0.6163272, z: -0.21794705, w: 0.71343696}
+    m_Target: {x: 0.3156474, y: 0.06398391, z: -0.021338662, w: 0.94647676}
     speed: 2
-    m_Value: {x: 0.25228682, y: 0.61632687, z: -0.21794692, w: 0.71343654}
+    m_Value: {x: 0.31564727, y: 0.06398389, z: -0.021338655, w: 0.9464764}
   m_Size:
-    m_Target: 123.9583
+    m_Target: 48.09659
     speed: 2
-    m_Value: 123.9583
+    m_Value: 48.09659
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -390,9 +390,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f2f7ffff
+      m_SelectedIDs: e0ed0000
       m_LastClickedID: 0
-      m_ExpandedIDs: d4f7ffff5cfaffff42fbffff
+      m_ExpandedIDs: d438fdff42fbffff263a0000803b00005cef000076f20000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -481,11 +481,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\_NOVO_NOTEBOOK_CAIO\Documents\BetaGit\Merlin-Challenge-Beta\Desafio
     De Merlin
@@ -493,9 +493,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa460000
-    m_LastClickedID: 18090
-    m_ExpandedIDs: 00000000b2450000b4450000b6450000b845000000ca9a3b
+    m_SelectedIDs: be460000
+    m_LastClickedID: 18110
+    m_ExpandedIDs: 00000000d8450000da450000dc450000de45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -523,7 +523,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b2450000b4450000b6450000b845000000ca9a3b
+    m_ExpandedIDs: 00000000d8450000da450000dc450000de45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -548,8 +548,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f2f7ffff
-    m_LastClickedInstanceID: -2062
+    m_SelectedInstanceIDs: e0ed0000
+    m_LastClickedInstanceID: 60896
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: d866000020400000244000001e40000000000000
     m_RenameOverlay:
@@ -575,7 +575,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 1665}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 140

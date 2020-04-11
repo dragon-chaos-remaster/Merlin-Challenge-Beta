@@ -51,6 +51,7 @@ public class Raio : MonoBehaviour
                 if (inimigoMaisPerto == null || Vector3.Distance(inimigoMaisPerto.position, raio.position) > Vector3.Distance(inimigos[i].transform.position, raio.position))
                 {
                     inimigoMaisPerto = inimigos[i].transform;
+                   
                     print(inimigos[i].transform);
                 }
             }
@@ -59,6 +60,10 @@ public class Raio : MonoBehaviour
         if (other.gameObject.CompareTag("inimigoTerra") || other.gameObject.CompareTag("inimigoFraco"))
         {
             print(ricochetes);
+            ricochetes++;
+        }
+        else
+        {
             ricochetes++;
         }
         raio.LookAt(inimigoMaisPerto);

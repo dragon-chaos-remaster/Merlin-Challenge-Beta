@@ -9,7 +9,7 @@ public class Explode : MonoBehaviour
     [SerializeField] float explosionForce;
     [SerializeField] float delay = 3f;
     float countdown;
-
+    //bool canExplode;
     bool hasExploded;
     [SerializeField] TimeManager freezeFrame;
      

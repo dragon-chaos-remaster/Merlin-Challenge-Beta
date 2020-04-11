@@ -28,7 +28,9 @@ public class RockEnemy : MonoBehaviour
     Rigidbody myBody;
     [SerializeField] bool enemySpotted = false;
     [SerializeField] bool startNavMesh;
-    bool canExplode = false;
+
+    bool canStartTracking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,20 +69,25 @@ public class RockEnemy : MonoBehaviour
     void Update()
     {
         //snare.Desnare(1.5f);
-        if (WaveSpawner.Instance.waveRound == 2 && !WaveSpawner.Instance.bosses[0].activeInHierarchy)
+        if (WaveSpawner.Instance.waveRound == 2 && !WaveSpawner.Instance.activateBoss[1])
         {
-            canExplode = true;
-            if (canExplode)
+            canStartTracking = true;
+            if (canStartTracking)
             {
-                enemyDetectionSpots = Physics.OverlapSphere(transform.position, areaDeDetecao, layerDoPlayer);
+                if (GetComponent<SphereCollider>() == null)
+                {
+                    GetComponent<CapsuleCollider>().enabled = true;
+                }
+                else
+                {
+                    colisorEsfera.enabled = true;
+                }
+                
             }
-            else
-            {
-                return;
-            }
+            enemyDetectionSpots = Physics.OverlapSphere(transform.position, areaDeDetecao, layerDoPlayer);
             if (enemyDetectionSpots.Length != 0)
             {
-                //print("ENEMY SPOTTED");
+                print("ENEMY SPOTTED");
                 enemySpotted = true;
             }
             if (enemySpotted)

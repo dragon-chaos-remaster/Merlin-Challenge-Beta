@@ -8,8 +8,15 @@ public class WaveSpawner : MonoBehaviour
 {
 
     public Pooling[] pooledObjects;
+
+    // TODOS PRECISAM ESTAR VERDADEIROS
+    [SerializeField] public bool[] activateBoss;
+    // TODOS PRECISAM ESTAR VERDADEIROS
+
     [SerializeField] public List<GameObject> bosses = new List<GameObject>();
-    
+
+    [SerializeField] GameObject secondBossExplosion;
+
     [SerializeField] TimeManager tempo;
 
     public int waveRound = 1;
@@ -138,7 +145,7 @@ public class WaveSpawner : MonoBehaviour
         if (procurarContador <= 0f)
         {
             procurarContador = 1f;
-            if (GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null && !bosses[0].activeInHierarchy)
+            if ((GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null) && !bosses[0].activeInHierarchy && activateBoss[1])
             {
                 //FREEZE FRAME NO ULTIMO INIMIGO
                 tempo.FreezeFrame();
@@ -157,16 +164,30 @@ public class WaveSpawner : MonoBehaviour
         //WaveCount.Instance.waveClear.gameObject.SetActive(true);
         if (proximaWave + 1 > waves.Length - 1)
         {
-            bosses[0].SetActive(true);
-            StopAllCoroutines();
-            proximaWave = 0;
-            waveRound++;
+            if (activateBoss[0])
+            {
+                bosses[0].SetActive(true);
+                activateBoss[0] = false;
+                StopAllCoroutines();
+            }
+            else if (activateBoss[1])
+            {
+                secondBossExplosion.SetActive(true);
+                activateBoss[1] = false;
+                StopAllCoroutines();
+            }
+            Invoke("RestartEveryWave", 3f);
         }
         else
         {
             proximaWave++;
         }
 
+    }
+    void RestartEveryWave()
+    {
+        proximaWave = 0;
+        waveRound++;
     }
     IEnumerator CanSpawn(Wave wave)
     {
