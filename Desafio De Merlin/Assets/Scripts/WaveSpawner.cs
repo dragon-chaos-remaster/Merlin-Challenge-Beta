@@ -145,7 +145,7 @@ public class WaveSpawner : MonoBehaviour
         if (procurarContador <= 0f)
         {
             procurarContador = 1f;
-            if ((GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null) && !bosses[0].activeInHierarchy && activateBoss[1])
+            if ((GameObject.FindGameObjectWithTag("inimigoFraco") == null && GameObject.FindGameObjectWithTag("inimigoTerra") == null) && !bosses[0].activeInHierarchy && activateBoss[1] && (!bosses[1].GetComponentInChildren<SphereCollider>().enabled || !bosses[1].activeInHierarchy))
             {
                 //FREEZE FRAME NO ULTIMO INIMIGO
                 tempo.FreezeFrame();

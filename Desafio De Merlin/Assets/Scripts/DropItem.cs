@@ -20,7 +20,7 @@ public class DropItem : MonoBehaviour
     public void Dropando()
     {
         numero = Random.Range(0 , 100);
-        Debug.LogError(numero);
+        //Debug.LogError(numero);
         if (numero > controleDrop)
         {
             Instantiate(item, ondeNasce.position, ondeNasce.rotation);

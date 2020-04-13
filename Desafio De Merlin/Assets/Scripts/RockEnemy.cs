@@ -71,9 +71,11 @@ public class RockEnemy : MonoBehaviour
         //snare.Desnare(1.5f);
         if (WaveSpawner.Instance.waveRound == 2 && !WaveSpawner.Instance.activateBoss[1])
         {
+            //print("roooo");
             canStartTracking = true;
             if (canStartTracking)
             {
+                //print("é vc desgraçado?");
                 if (GetComponent<SphereCollider>() == null)
                 {
                     GetComponent<CapsuleCollider>().enabled = true;
@@ -87,7 +89,7 @@ public class RockEnemy : MonoBehaviour
             enemyDetectionSpots = Physics.OverlapSphere(transform.position, areaDeDetecao, layerDoPlayer);
             if (enemyDetectionSpots.Length != 0)
             {
-                print("ENEMY SPOTTED");
+                //print("ENEMY SPOTTED");
                 enemySpotted = true;
             }
             if (enemySpotted)

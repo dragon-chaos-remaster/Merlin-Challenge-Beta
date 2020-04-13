@@ -12,19 +12,22 @@ public class BossCaveira : MonoBehaviour
 
     public Transform[] eixos = new Transform[3];
 
+    [SerializeField] List<Transform> ondeMinionsNascem = new List<Transform>();
+    
     //public GameObject projetil;
 
     [SerializeField] Pooling pooling;
+    [SerializeField] Pooling minionsPooling;
 
-    public Transform caveiraUm;
-    public Transform caveiraDois;
-    public Transform caveiraTres;
-    public Transform caveiraQuatro;
+    //public Transform caveiraUm;
+    //public Transform caveiraDois;
+    //public Transform caveiraTres;
+    //public Transform caveiraQuatro;
 
-    public Transform ondeNascoUm;
-    public Transform ondeNascoDois;
-    public Transform ondeNascoTres;
-    public Transform ondeNascoQuatro;
+    //public Transform ondeNascoUm;
+    //public Transform ondeNascoDois;
+    //public Transform ondeNascoTres;
+    //public Transform ondeNascoQuatro;
 
 
     public float tempoDeEspera = 5;
@@ -139,10 +142,25 @@ public class BossCaveira : MonoBehaviour
 
         if (podeSummon)
         {
-            Instantiate(caveiraUm, ondeNascoUm.position, ondeNascoUm.rotation);
-            Instantiate(caveiraDois, ondeNascoDois.position, ondeNascoDois.rotation);
-            Instantiate(caveiraTres, ondeNascoTres.position, ondeNascoTres.rotation);
-            Instantiate(caveiraQuatro, ondeNascoQuatro.position, ondeNascoQuatro.rotation);
+            //Instantiate(caveiraUm, ondeNascoUm.position, ondeNascoUm.rotation);
+            //Instantiate(caveiraDois, ondeNascoDois.position, ondeNascoDois.rotation);
+            //Instantiate(caveiraTres, ondeNascoTres.position, ondeNascoTres.rotation);
+            //Instantiate(caveiraQuatro, ondeNascoQuatro.position, ondeNascoQuatro.rotation);
+            
+           
+            
+            for(int i = 0;i < ondeMinionsNascem.Count; i++)
+            {
+                GameObject aux = minionsPooling.GetPooledObject();
+                if (aux != null)
+                {
+                    aux.transform.position = ondeMinionsNascem[i].position;
+                    aux.transform.rotation = ondeMinionsNascem[i].rotation;
+                    aux.SetActive(true);
+                }
+            }
+                
+            
             podeSummon = false;
             tempo = 1;
             tempoAtual = 0;
